@@ -1,0 +1,38 @@
+.image-container{
+    height: 100vh;
+    width: 40rem;
+    position: relative;
+}
+
+.fancy-text{
+    font-family: 'Amita', cursive;
+}
+.logo-div{
+    height: 15rem;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.logo-title{
+    color: white;
+    font-size: 5rem;
+}
+
+#left-image{
+    height: 100%;
+    width: 100%;
+}
+
+#odin-logo-image{
+    width: 8rem;
+    height: auto;
+    
+}
