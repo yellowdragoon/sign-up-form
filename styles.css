@@ -1,7 +1,18 @@
+:root{
+    --right-side-all-elements-margin-left: 30px;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
 .image-container{
     height: 100vh;
     width: 40rem;
     position: relative;
+    min-width: 400px;
 }
 
 .fancy-text{
@@ -26,6 +37,19 @@
     font-size: 5rem;
 }
 
+.image-credits{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.image-credits > a{
+    color: white;
+    font-weight: bold;
+}
+
 #left-image{
     height: 100%;
     width: 100%;
@@ -35,4 +59,115 @@
     width: 8rem;
     height: auto;
     
+}
+.right-side{
+    background-color: rgb(255, 228, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.right-side > p:first-of-type{
+    font-size: 1.5rem;
+    margin-left: var(--right-side-all-elements-margin-left);
+    margin-bottom: 10px;
+    width: 700px;
+}
+
+.right-side > p:last-of-type{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: var(--right-side-all-elements-margin-left);
+    margin-bottom: 30px;
+}
+
+.form-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 20rem;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px 20px 20px var(--right-side-all-elements-margin-left);
+    box-shadow: 0 5px 8px rgb(0, 0, 0, 0.3);
+}
+
+.form-inputs > label{
+    font-size: 1.5rem;
+}
+
+.form-inputs > h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.input-boxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 70%;
+    flex: 1;
+}
+
+.input-block{
+    margin-bottom: 10px;
+}
+
+.input-block > input{
+    display: block;
+    height: 1.5rem;
+    border-radius: 5px;
+    border-color: #E5E7EB;
+    border-style: solid;
+    border-width: 1.5px;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-right: 80px;
+}
+
+
+input:invalid {
+    border-color: red;
+}
+  
+input:valid {
+    border-color: green;
+}
+
+input:focus{
+    border-color: rgb(26, 26, 221);
+    outline: none;
+}
+
+.submit-button{
+    background-color: rgb(209, 95, 152);
+    color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.submit-button:hover{
+    background-color: rgb(236, 126, 181);
+    cursor: pointer;
+}
+
+.submit-section{
+    margin-left: var(--right-side-all-elements-margin-left);
+    margin-top: 40px;
+}
+
+.login-text{
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.login-text > a{
+    color: blueviolet;
+    font-weight: bold;
+    text-decoration: none;
 }

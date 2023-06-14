@@ -18,7 +18,51 @@
             <img src="./img/odin-lined.png" alt="Odin logo" id="odin-logo-image">
             <h1 class="logo-title fancy-text">ODIN</h1>
         </div>
+        <div class="image-credits">Photo by <a href="https://unsplash.com/@jrkorpa">jrkorpa</a> on <a href="https://unsplash.com"> Unsplash</a></div>
     </div>
-    <div class="right-side"></div>
+    <div class="right-side">
+        <p>This is not a real service! Do you want to jump into a world where all of your troubles will fade away?</p>
+        <p>Then sign up <em>now</em>.</p>
+        <form action="post">
+            <div class="form-inputs">
+                <h1>Let's do this!</h1>
+                <div class="input-boxes">
+                    <div class="input-block">
+                        <label for="first_name">*First Name</label>
+                        <input type="text" id="first_name" name="first_name" required title="Please enter your first name">
+                    </div>
+                    <div class="input-block">
+                        <label for="email">*Email</label>
+                        <input type="email" id="email" name="email" required title="Please enter your email address">
+                    </div>
+                    <div class="input-block">
+                        <label for="password">*Password</label>
+                        <input type="password" id="password" name="password" required minlength="8" maxlength="20" title="Please enter a valid password (8-20 characters)">
+                    </div>
+                    <div class="input-block">
+                        <label for="last_name">*Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required title="Please enter your last name">
+                    </div>
+                    <div class="input-block">
+                        <label for="phone_num">Phone Number</label>
+                        <input type="text" id="phone_num" name="phone_num">
+                    </div>
+                    <div class="input-block">
+                        <label for="confirm-password">*Confirm Password</label>
+                        <input type="password" id="confirm-password" required title="This must be the same as your password already set">
+                    </div>
+                </div>
+            </div>
+            <div class="submit-section">
+                <button class="submit-button" type="submit">
+                    Create Account
+                </button>
+                <div class="login-text">
+                    Already have an account? <a href="#">Log in</a>
+                </div>
+            </div>
+        </form>
+        
+    </div>
 </body>
 </html>
